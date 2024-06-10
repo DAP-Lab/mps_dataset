@@ -89,7 +89,7 @@ Miscue Label         :  c      c       s           s         c      c       c   
 
 ## Phone Set used in Lexicon
 
-# List of phones used in this work with sample English word
+### List of phones used in this work with sample English word
 
 | Phone | Sample Word    | &nbsp;&nbsp;&nbsp;&nbsp; | Phone | Sample Word |
 | --- | --- | --- | --- | --- |
