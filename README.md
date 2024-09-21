@@ -2,7 +2,14 @@
 
 This dataset has been released as part of the Interspeech 2024 research paper titled "A Dataset and Two-pass System for Reading Miscue Detection". 
 If you find the MPS dataset useful in your research, kindly use the following BibTeX entry for citation:
-`Citation details to be added here`
+``@inproceedings{inproceedings,
+author = {Gothi, Raj and Kumar, Rahul and Pereira, Mildred and Nayak, Nagesh and Rao, Preeti},
+year = {2024},
+month = {09},
+pages = {4014-4018},
+title = {A Dataset and Two-pass System for Reading Miscue Detection},
+doi = {10.21437/Interspeech.2024-1639}
+}``
 
 ## Dataset details
 This dataset contains audio recordings and text transcripts of 1600 utterances of read aloud text across 1110 unique speakers. These audios were collected as part of a benchmarking exercise in the summer of 2023 for testing reading levels in Grades 3, 4 & 5 (age 7-11 years) of 10 government schools across the Indian states of Maharashtra and Goa on L2 English grade-appropriate texts. The [text prompts](#text-prompts) which comprise of the 2 paragraphs of a single story, each between 60-80 words, with a unique story assigned to each grade have also been provided. The total audio duration of the dataset is 19 hours with speakers uniformly distributed across the three grades. The dataset is fully labeled with filler/non-speech events and word-level transcriptions using a [semi-automated transcription process](#manual-transcription-process). The reading errors are observed to comprise a number of non-English words, which are transcribed phonemically and a lexicon with the [phone sequences](#phone-set-used-in-lexicon) and alternate pronunciation for all words used in transcription has been made available. Additionally, the school grade and gender information of the speakers is provided as metadata. Next, the miscue labels of transcript words with reference to aligned text prompts post the [alignment process](#alignment-process) are made available as Cor/Subs/Ins/Del. From the word-level transcript, the error type (e.g. partial word) can further be inferred for any studies requiring this. 
@@ -116,9 +123,9 @@ Miscue Label         :  c      c       s           s         c      c       c   
 
 
 ## Contents of the repository
-- `audios` folder contains the oral reading attempts of the students captured at sampling rate of 16kHz and stored as 16-bit mono PCM (.wav) files. The background noise varies from barely audible to classroom noise in the vicinity of the speaker.\
+- `audios` folder contains the oral reading attempts of the students captured at sampling rate of 16kHz and stored as 16-bit mono PCM (.wav) files. The background noise varies from barely audible to classroom noise in the vicinity of the speaker.
 - `data.json` is a common file containing the metadata associated with each attempt using human-readable fields. For further explanation, one of the entries from the array has been described in detail [here](#json-example-with-details)
-- `lexicon_IS2024.txt` contains all the words and the corresponding phone sequence with alternative pronunciations used in transcription.\
+- `lexicon_IS2024.txt` contains all the words and the corresponding phone sequence with alternative pronunciations used in transcription.
 - `notebook.ipynb` explains how to read a data.json file and extract the required information.
 
 For further details, check out the following link: [Supplementary material](https://lapis-homegrown-710.notion.site/Supplementary-material-Interspeech-2024-submission-810faeb994bd4607aafdb7b12b730f55)
