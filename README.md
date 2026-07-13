@@ -62,6 +62,8 @@ The collected audio recordings are first passed through an in-house ASR [Kaldi T
 | IR  | Irrelevant speech (background speaker) present at the start or end of the recording   |
 | MB  | Unintelligible words or mumbling  |
 | WH  | Child whispering a word (many a times this can be heard when the child is trying to spell out the word)  |
+| HS  | Hesitation while uttering a word. It is used as a suffix for words where the child hesitated while reading.  |
+
 
 The completed transcriptions are further QC’d by an expert comfortable with both English and Devanagari and aware of the labelling conventions.
 
