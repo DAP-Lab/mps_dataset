@@ -176,3 +176,6 @@ For further details, check out the following link: [Supplementary material](http
     ]
 }
 ```
+
+## License
+Use of this dataset is governed by a license. For further information, please contact Dr. Preeti Rao at prao@iitb.ac.in.
